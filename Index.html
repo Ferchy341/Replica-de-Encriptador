@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ENCRIPTADOR DE TEXTO</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+                                 
+    </head>
+    <body>
+        <header>
+            <img src="./Imagenes/Vector.png" class="logo">
+        </header>
+        <main class="main">
+            <section>
+                <textarea type="text"  class="ingreseTexto"  placeholder="Ingrese el texto aqui"></textarea>                    
+                                           
+                <div class="condiciones">
+                    <img src="./Imagenes/signo de admiracion.png">
+                    <h4 id="condiciones">Sólo letras minúsculas y sin acentos</h4>
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="btnencriptar()" class="botonEncriptar">Encriptar!</button>
+                    <button type="button" onclick="btndesencriptar()" class="botonDesencriptar">Desencriptar!</button>
+                </div>
+            </section>       
+                      
+            <section class="imagenes">
+                <div class="muneco-texto" id="desaparecerimagen">
+                    <img src="./Imagenes/Capturademuneco.PNG" class="muneco">
+                    <img src="./Imagenes/NingunMensajeCompleto.png" class="ningunMensaje">
+                </div>
+                
+                <div class="texto-boton" id="texto-boton">
+                    <textarea type="text" class="textoIngresado" id="mensaje" placeholder="Ningún mensaje"></textarea>
+                    <button type="button" class="botoncopiar" id="botoncopiar">Copiar</button>                                   
+                </div>    
+            </section>
+        </main>
+        <footer>
+            <div class="by">- &copy; 2022 María Fernanda Moreno -</div>
+        </footer>
+        <script src="encripta.js"></script>
+    </body>
+</html>
